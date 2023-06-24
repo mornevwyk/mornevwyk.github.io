@@ -7,8 +7,28 @@
 h1 {
     margin-bottom: 0;
     padding-bottom: 0;
+    text-align: center;
 }
 
 h3{
     margin-top: 0;
+    font-weight: 100;
+    text-align: center;
+}
+
+#navbar{
+    text-align: center;
+    display: block;
+    padding: 2vh;
+}
+
+#socials {
+    text-align: center;
+    display: block;
+    padding: 2vh;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
 }
