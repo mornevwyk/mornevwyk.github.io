@@ -1,7 +1,7 @@
 ﻿body {
     font-family: 'Pathway Extreme', sans-serif;
-    background-color: black;
-    color: white;
+    background-color: #000000 /*#262223*/;
+    color: #DDC6B6;
 }
 
 h1 {
@@ -16,6 +16,12 @@ h3{
     text-align: center;
 }
 
+#intro{
+    display: block;
+    padding: 0;
+    margin: 5vw
+}
+
 #navbar{
     text-align: center;
     display: block;
@@ -25,10 +31,10 @@ h3{
 #socials {
     text-align: center;
     display: block;
-    padding: 2vh;
+    color: #DDC6B6;
 }
 
-nav a{
+nav a {
     text-decoration: none;
-    color: white;
+    color: #DDC6B6;
 }
