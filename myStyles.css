@@ -88,6 +88,11 @@ svg circle{
     border-image: linear-gradient(to right, var(--alternate-color), var(--primary-color)) 1;
 }
 
+.seperator{
+    border-top:1px solid;
+    border-image: linear-gradient(to right, var(--alternate-color), var(--primary-color)) 1;
+}
+
 footer{
     color:var(--secondary-color);
     position:realtive;
