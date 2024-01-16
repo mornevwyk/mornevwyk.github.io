@@ -165,3 +165,8 @@ footer{
     z-index: -1;
 }
 
+@media (max-width:600px){
+    .hero h1{
+        font-size: 32px;
+    }
+}
