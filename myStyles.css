@@ -8,6 +8,7 @@
 *{
     box-sizing:border-box;
     font-family: 'Marcellus', sans-serif;
+    cursor: url('circle.svg'), auto;
 }
 body, main{
     padding:0;
@@ -15,7 +16,6 @@ body, main{
     border:0;
     background-color:var(--primary-color);
     color:var(--secondary-color);
-    
 }
 
 a{
@@ -42,6 +42,7 @@ header a{
     margin: 10px 10px;
     padding:5px;
     border: 2px solid var(--primary-color);
+    transition: border 0.5s;
 }
 
 header a:focus{
@@ -74,7 +75,8 @@ header a:hover{
     font-weight: 200;
     padding-top:10px;
     margin-top:5px;
-    border-top:1px solid var(--alternate-color);
+    border-top:1px solid;
+    border-image: linear-gradient(to right, var(--alternate-color), var(--primary-color)) 1;
 }
 
 
@@ -165,7 +167,7 @@ footer{
     z-index: -1;
 }
 
-@media (max-width:600px){
+@media (max-width:500px){
     .hero h1{
         font-size: 32px;
     }
