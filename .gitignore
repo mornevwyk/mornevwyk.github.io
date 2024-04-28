@@ -8,3 +8,16 @@
 .vs/mornevwyk.github.io/v17/.wsuo
 *.sqlite
 .vs/VSWorkspaceState.json
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
