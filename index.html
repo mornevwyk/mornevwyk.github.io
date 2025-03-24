@@ -3,110 +3,100 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morné van Wyk | Computational Biologist</title>
+    <meta name="description" content="Morné van Wyk, PhD - Expert in Computational Biology, Systems Biology, and Machine Learning. Explore my projects, research, and tools." />
     <link rel="stylesheet" href="/myStyles.css" >
     <script src="https://kit.fontawesome.com/d08cba877d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Marcellus&Open+Sans&family:opsz,wght@8..144,200;8..144,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Marcellus&Open+Sans&display=swap" rel="stylesheet">
 </head>
-<main>
-    <body>
-        <header>
-            <span id="name">Morn&#233; van Wyk, PhD</span>
-            <nav>
-                <a href="#projects">Projects</a>
-                <a href="#tools">Tools</a>
-                <a href="">Other</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        <div class="container">
-            <img id="portrait" src="./resources/portrait.JPG"></img>
-            <h1 id="title">Morn&#233; van Wyk, PhD</h1>
-        </div>
-        <div class="container">
-            <h3 id="sub-title">Biochemistry | Systems Biology | Computational Biology</h3>
-        </div>
-        <div class="container">
-            <h3 class="container-title">About me</h3>
-            <div class="container-content">
-                <ul>
-                    <li>
-                        <p>I completed my PhD in biochemistry at the University of Stellenbosch, South Africa, in January 2024, focussing on both computational and experimental biochemistry. My research has been focused on the dynamical systems in nature, specifically cyclical ones, such as the metabolic oscillations in yeast cell and the calcium oscillations and insulin secretion from pancreatic &beta;-cells.</p>
-                        <br/>
-                        <p>I make use of both wet lab techniques and computational biology for my research by creating mathematical models of biological phenomena and validating these models with biological data. With expertise in assay development and enzyme kinetics I am able to create detailed kinetic models which can be used as tools for further research, including effective drug target discovery.</p>
-                    </li>
-                </ul>
+<body>
+    <header>
+        <span id="name">Morn&#233; van Wyk, PhD</span>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#tools">Tools</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about" class="container">
+            <img id="portrait" src="./resources/portrait.JPG" alt="Portrait of Morné van Wyk">
+            <h1>Morn&#233; van Wyk, PhD</h1>
+            <h3>Biochemistry | Systems Biology | Computational Biology</h3>
+            <p>I completed my PhD in Biochemistry at the University of Stellenbosch, South Africa, in January 2024, focusing on computational and experimental biochemistry. My research specializes in dynamical biological systems, particularly metabolic oscillations in yeast cells and calcium oscillations in pancreatic β-cells.</p>
+            <p>Combining wet-lab techniques with computational modeling, I develop mathematical models to simulate biological phenomena, validate them with real-world data, and contribute to drug target discovery.</p>
+            <p>My interests also extend to machine learning applications in computational biology, including the development of predictive models for drug discovery, biomarker identification, and precision medicine.</p>
+        </section>
+
+        <section id="projects" class="container">
+            <h3>Projects</h3>
+            <ul>
+                <li>
+                    <p><b>Pancreatic β-cell Metabolism and Synchronization</b> - Investigating the crucial role of pancreatic β-cell metabolism in linking cellular processes to insulin secretion and understanding its synchronization in maintaining healthy pancreas function.</p>
+                </li>
+                <li>
+                    <p><b>Yeast Glycolytic Oscillations</b> - Exploring how glycolysis exhibits oscillatory behavior, controlled by phosphofructokinase, to gain deeper insights into glucose metabolism.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="research" class="container">
+            <h3>Research & Publications</h3>
+            <ul>
+                <li>
+                    <p><b>Kinetic Modelling of Glycolytic Oscillations</b> - Published in <i>Essays in Biochemistry</i>, this study explores the mathematical modeling of metabolic oscillations and their implications in cellular function.</p>
+                </li>
+                <li>
+                    <p><b>Application of Bayesian Inference in Pharmacokinetics</b> - Research on how Bayesian statistics can improve the prediction accuracy of PK/PD models in drug metabolism.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="tools" class="container">
+            <h3>Tools</h3>
+            <ul>
+                <li>
+                    <a href="https://github.com/mornevwyk/cell-identifier">
+                        <p><b>Cell Detection</b> - A fluorescent microscopy image processing tool that segments and extracts intensity data from individual cells for further analysis.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://amp-finder.streamlit.app/">
+                        <p><b>Antimicrobial Peptide Finder</b> - A web-based screening tool utilizing machine learning models to predict antimicrobial activity in protein sequences.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/mornevwyk/tinyfit">
+                        <p><b>TinyFit</b> - A lightweight Python package implementing linear regression using gradient descent, featuring feature scaling and multi-variable regression capabilities.</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="container">
+            <h3>Contact</h3>
+            <p>Feel free to reach out for collaborations or inquiries:</p>
+            <div class="contacts">
+                <a href="https://github.com/mornevwyk" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="http://linkedin.com/in/morné-van-wyk-19b841170" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:morn.vanwyk@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-at"></i>
+                </a>
             </div>
-        </div>
-        <div class="container">
-            <h3 id="projects" class="container-title">Projects</h3>
-            <div class="container-content">
-                <ul>
-                    <li>
-                        <p><b class="highlight">Pancratic &beta;-cell metabolism and synchronisation - </b>Pancreatic &beta;-cell metabolism forms a crutial step in linking cellular metabolism to insulin secretion. The synchronisation of insulin secretion from individual beta cells is also of vital importance to heathly pancreas function.</p>
-                    </li>
-                    <li><p><b class="highlight">Yeast glycolytic oscillations - </b> Under certain conditions glycolysis shows oscillatory behaviour which is largely controlled by the allosterically controlled enzyme phosphofructokinase. Using yeast as a model organism we are able to further understand the fundamental nature of glucose metabolism.</p></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
-            <h3 id="tools" class="container-title">Tools</h3>
-            <div class="container-content">
-                <ul>
-                    <li>
-                        <a href="https://github.com/mornevwyk/cell-identifier" class="hover-highlight">
-                            <p><b>Cell Detection - </b>This tool identifies individual cells in an image taken using fluorescent microscopy. The image is segmented so that the intensities for each cell can be attained and used for further analysis. This tool can be applied to single images for a signle intensity value for each cell or can be used in a time series to get the intensity over time for each identified cell.</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://amp-finder.streamlit.app/" class="hover-highlight">
-                            <p><b>Antimicrobial Peptide Finder - </b>A web app that can be used to screen for antimicrobial peptide activity in protein sequences. The web app alows the user to upload a .fasta file of protein sequences which the program will make predictions on. The program makes predictions based on a combination of a random forest classifier, gradient boost classier, dense neural network, recursive neural network and convolutional neural network all trained on available data on existing antimicrobial peptides.</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- <div class="container">
-            <h3 class="container-title">Other Projects</h3>
-            <div class="container-content">
-                <div>
-                    <ul>
-                        <li>
-                            Rock-Paper-Scissors Bot
-                        </li>
-                        <li>
-                            <p><b>Health Insurance Estimator - </b>This program uses a regression model trained on insurance data to estimate an individuals health insurnce consts based on a few key criteria.</p>
-                        </li>
-                        <li>
-                            <p><b>Key Quest - </b>A small pltformer made for the Brackey's 2024.1 game jam.</p>
-                            <iframe frameborder="0" src="https://itch.io/embed/2533702?border_width=0" width="206" height="165"><a href="https://metricgames.itch.io/key-quest">Key Quest by MG</a></iframe>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
-        <div class="container">
-            <h3 class="container-title">Contact</h3>
-            <div class="container-content">
-                <ul>
-                    <li>
-                        <div id="contact" class="contacts">
-                            <a href="https://github.com/mornevwyk">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="http://linkedin.com/in/morné-van-wyk-19b841170">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="mailto:morn.vanwyk@gmail.com">
-                                <i class="fa-solid fa-at"></i>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
-    </body>
-</main>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Morné van Wyk. All rights reserved.</p>
+    </footer>
+</body>
 </html>
