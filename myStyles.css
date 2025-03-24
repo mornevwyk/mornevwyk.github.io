@@ -1,169 +1,92 @@
-*{
-    border: 0px solid black;
-    margin:0;
-
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #1B1B1B;
+}
+
+header {
     position: fixed;
-    height: 30px;
-    width:100%;
-    margin:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(217, 217, 217, 0.95);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #D9D9D9;
-    z-index:100;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header #name{
-    margin:12px;
+header #name {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav a{
-    margin-right:12px;
-    transition: 0.5s;
+nav a {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: #1B1B1B;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-nav a:hover{
-    color:#CE6512;
-}
-
-.container{
-    display:grid;
-    min-height: 300px;
-    max-width: 100%;
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: #D9D9D9;
-}
-
-.container:first-of-type{
-    background-image: url("mountains.jpg");
-    background-size: cover;
-    background-position-y:bottom;
-    width:100%;
-    height:100%;
-}
-
-.container:nth-child(3){
-    min-height:50px;
-    background-color: #1B1B1B;
-    color: #D9D9D9;
-}
-
-/* .container:nth-child(5){
-    background-color:#1B1B1B;
-    width:100%;
-    height:100%;
-    color:#D9D9D9;
-} */
-
-.container:nth-child(5){
-    background-image: url("stars.jpg");
-    background-size: cover;
-    background-position-y:center;
-    width:100%;
-    height:100%;
-    color:#D9D9D9;
-}
-
-.container:last-of-type{
-    background-image: url("forest.jpg");
-    background-size: cover;
-    background-position-y:center;
-    width:100%;
-    height:100%;
-}
-
-#title{
-    color:#D9D9D9;
-    grid-column: 2 / span 2;
-    grid-row: 2;
-    justify-self: start;
-    align-self: end;
-}
-
-#sub-title{
-    color:#CE6512;
-    grid-column: 2 / span 2;
-}
-
-#portrait{
-    padding-right:12px;
-    grid-column:1;
-    grid-row:2;
-    justify-self: end;
-    align-self: end;
-    position:relative;
-    width:175px;
-    height:200px;
-    object-fit: cover;
-    object-position: 85%;
-    bottom:-35px;
-}
-
-.container-title{
-    justify-self: end;
-    align-self: start;
-    grid-column: 1;
-    grid-row: 1;
-    padding-top:12px;
-    margin-top:12px;
-    margin-right:12px;
-}
-
-.container-content{
-    grid-column:2;
-    grid-row:1;
-    margin-top:0px;
-}
-
-ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-}
-
-li{
-    margin-top:12px;
-    padding:12px;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
-    border-radius: 6px;
-}
-
-li:last-child{
-    margin-bottom:12px;
-}
-
-.contacts{
-    display: flex;
-    justify-content: space-around;
-}
-
-.contacts a{
-    font-size: 2rem;
-    transition: 0.5s;
-}
-
-.contacts a:hover{
+nav a:hover {
     color: #CE6512;
 }
 
-a{
-    text-decoration: none;
-    color:#1B1B1B
+.container {
+    max-width: 1100px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.highlight{
-    color:#CE6512
+.container h3 {
+    color: #CE6512;
+    margin-bottom: 10px;
 }
 
-.hover-highlight p b{
-    transition: 0.5s;
+ul {
+    list-style: none;
 }
 
-.hover-highlight:hover p b{
-    color:#CE6512;
+li {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.contacts a {
+    color: #1B1B1B;
+    transition: color 0.3s;
+}
+
+.contacts a:hover {
+    color: #CE6512;
 }
