@@ -90,3 +90,12 @@ li:hover {
 .contacts a:hover {
     color: #CE6512;
 }
+
+#portrait {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
